@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Link googel Font -->
+      <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+    <!-- Link  Font awsam -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- respinsev style -->
+    <link rel="stylesheet" href="css/responsive.css">
+      <title>تفاصيل البطولة</title>
+</head>
+<body id="News">
+  <!-- main-wrapper -->
+  <section class="main-wrapper news">
+    <div class="open-nav" onclick="show_menu()">
+      <i class="fa-solid fa-bars" ></i>
+    </div>
+<!-- header right -->
+<header class="heder-right">
+  <div class="close-menue" onclick="close_menu()">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <span><img src="img/Group 89.png" alt="" style="width: 172px;"></span>
+  <br>
+  <br>
+  <nav class="nav-bar-1">
+    <ul class="nav-list">
+      <li><a href="index.html" > <i class="fa-solid fa-gauge-high"></i> الرئيسية</a></li>
+      <li><a href="Newes.html"> <i class="fa-regular fa-newspaper"></i>الأخبار</a></li>
+      <li><a href="Teams.html"> <i class="fa-solid fa-people-group"></i>اللاعبين</a></li>
+      <li class="active-nav"><a href="Championships.html"> <i class="fa-solid fa-medal"></i>البطولات</a></li>
+      <li><a href="support.html"> <i class="fa-solid fa-comments"></i> المحادثات</a></li>
+      <li><a href="Reservations.html"> <i class="fa-solid fa-square-check"></i>الحجوزات</a></li>
+      <li><a href="Transfer of Players.html"><i class="fa-solid fa-helmet-safety"></i>انتقالات اللاعبين</a></li>
+      <li><a href="Correspondence.html"><i class="fa-solid fa-envelope"></i>المراسلات</a></li>
+      <li><a href="Finance.html"><i class="fa-solid fa-building-columns"></i>المالية</a></li>
+      <li><a href="green stadiums.html"><i class="fa-solid fa-hockey-puck"></i>الملاعب الخضراء</a></li>
+    </ul>
+  </nav>
+  <nav class="nav-bar-2">
+    <ul>
+    <li><a href="#"><i class="fa-solid fa-gear"></i>الاعدادات</a></li>
+    <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>معلومات</a></li>
+  </ul>
+  </nav>
+ </header>
+    <!-- End header right -->
+    <!-- continer -->
+    <div class="continer news-continer">
+      <!-- main-heder -->
+      <header class="main-heder">
+ <h2 class="mobile_hed">تفاصيل البطولة</h2>
+ <div class="sar-prf">
+  <div class="heder-sarh">
+  <input type="search" name="search" id="input-search" placeholder="بحث">
+ 
+ </div>
+ <div class="card-profile dash-card de-fl al-cn">
+  <div class="card-profile-img de-fl">
+    <img src="img/Rectangle 37.png" alt="Rectangle">
+  </div>
+  
+  <span>محمد علي</span>
+  <div class="card-profile-icon">
+    <span class="de-fl al-cn ja-cn">2</span>
+    <i class="fa-regular fa-bell"></i>
+  </div>
+  
+  <box-icon name="bell"></box-icon>
+</div>
+ </div>
+ 
+ 
+ </header>
+ <!-- End main-heder -->
+ <!-- add-new -->
+    <h3 class="hed-detils">عنوان البطولة التي تم اختيارها </h3>
+    <form class="detiles-Championship">
+      <label for="">تسجيل أسماء الفرق المشاركة</label>
+     
+        <div class="select de-fl">
+            <select  onchange="selectCahng(this)">
+              <option value="" selected="" hidden="">اختر النشاط</option>
+            <option value="">كرة قدم</option>
+            <option value="">كرة طائرة</option>
+          </select>
+          </div>
+    
+      <div class="card-news-date-add de-fl al-cn">
+        <div class="news-date-add ">
+        <label>تاريخ البطولة  </label>
+        <label>من</label> <input type="date" name="date" id="date_1" placeholder="حدد الوقت" >
+        <label>إلى</label> <input type="date" name="date" id="date_2" placeholder="حدد الوقت">
+     
+      </div>
+      <div class="news-date-add ">
+        <label>وقت البطولة  </label>
+        <label>من</label> <input type="time" name="date" id="date_1" placeholder="حدد الوقت" >
+        <label>إلى</label> <input type="time" name="date" id="date_2" placeholder="حدد الوقت">
+     
+      </div>
+      </div>
+     <div class="detiles-stad de-fl">
+      
+      <div class="select ">
+        <p>الملعب</p>
+        <select name="select" id="select" onchange="selectCahng(this)">
+          <option value="" selected="" hidden="">اختر النشاط</option>
+        <option value="">كرة قدم</option>
+        <option value="">كرة طائرة</option>
+      </select>
+      </div>
+      <div class="select ">
+        <p>الحكم</p>
+        <select name="select" id="select" onchange="selectCahng(this)">
+          <option value="" selected="" hidden="">اختر النشاط</option>
+        <option value="">كرة قدم</option>
+        <option value="">كرة طائرة</option>
+      </select>
+      </div>
+     </div>
+      </form>
+
+        <!-- squad -->
+     <div class="squad">
+
+      <div class="squad-titl de-fl al-cn ">
+        <h3>التشكيلة</h3>
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+
+                 <!--  first Teame -->
+            <div class="first-team">
+              <div class="squad-team de-fl al-cn" >
+              <h3>اسم الفريق الأول</h3>
+              <div class="squad-plan">
+                <span>خطة التشكيلة</span>
+                <span class="num-plan">2</span>
+                <span class="num-plan">3</span>
+                <span class="num-plan">5</span>
+              </div>
+             </div>
+             <div class="squad-team-player de-fl ">
+              <div class="squad-team-player-info">
+                <p>اسم اللاعب</p>
+                <input type="text" placeholder="أضف اسم اللاعب">
+              </div>
+              <div class="squad-team-player-info">
+                <p>رقم القميص</p>
+                <input type="text" placeholder="أضف رقم القميص">
+              </div>
+              <div class="squad-team-player-info">
+                <p>مركز اللاعب</p>
+                <div class="select de-fl">
+                  <select name="select" id="select" onchange="selectCahng(this)">
+                    <option value="" selected="" hidden="">اختر النشاط</option>
+                  <option value="">مهاجم</option>
+                  <option value="">حارس</option>
+                  <option value="">مدافع</option>
+                  <option value="">وسط</option>
+                </select>
+                </div>
+              </div>
+              <div class="squad-team-player-but de-fl">
+                <button>إضافة</button>
+              </div>
+             </div>
+
+               <div class="squad-team-tabel">
+                <table>
+                  <thead>
+                    <tr>
+                      <th><i class="fa-solid fa-chevron-up"></i></th>
+                      <th>اسم اللاعب</th>
+                      <th>رقم القميص</th>
+                      <th>مركز اللاعب</th>
+                      <th>تعديل</th>
+                      <th>حذف</th>
+                    </tr>
+                  </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>01</td>
+                          <td>مهاجم</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>11</td>
+                          <td>حرس</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                         <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>05</td>
+                          <td>مدافع</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>77</td>
+                          <td>مهاجم</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>12</td>
+                          <td>مدافع</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>04</td>
+                          <td>وسط</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>02</td>
+                          <td>وسط</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>08</td>
+                          <td>وسط</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>10</td>
+                          <td>مدافع</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                      </tbody>
+                </table>
+               </div> 
+            </div>
+              <!-- End first Teame -->
+             <!--  scand Teame -->
+             <div class="scand-team">
+              <div class="squad-team de-fl al-cn" >
+              <h3>اسم الفريق الثاني</h3>
+              <div class="squad-plan">
+                <span>خطة التشكيلة</span>
+                <span class="num-plan">2</span>
+                <span class="num-plan">3</span>
+                <span class="num-plan">5</span>
+              </div>
+             </div>
+             <div class="squad-team-player de-fl ">
+              <div class="squad-team-player-info">
+                <p>اسم اللاعب</p>
+                <input type="text" placeholder="أضف اسم اللاعب">
+              </div>
+              <div class="squad-team-player-info">
+                <p>رقم القميص</p>
+                <input type="text" placeholder="أضف رقم القميص">
+              </div>
+              <div class="squad-team-player-info">
+                <p>مركز اللاعب</p>
+                <div class="select de-fl">
+                  <select name="select" id="select" onchange="selectCahng(this)">
+                    <option value="" selected="" hidden="">اختر النشاط</option>
+                    <option value="">مهاجم</option>
+                    <option value="">حارس</option>
+                    <option value="">مدافع</option>
+                    <option value="">وسط</option>
+                  </select>
+                </select>
+                </div>
+              </div>
+              <div class="squad-team-player-but de-fl">
+                <button>إضافة</button>
+              </div>
+             </div>
+
+               <div class="squad-team-tabel">
+                <table>
+                  <thead>
+                    <tr>
+                      <th><i class="fa-solid fa-chevron-up"></i></th>
+                      <th>اسم اللاعب</th>
+                      <th>رقم القميص</th>
+                      <th>مركز اللاعب</th>
+                      <th>تعديل</th>
+                      <th>حذف</th>
+                    </tr>
+                  </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>01</td>
+                          <td>مهاجم</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>11</td>
+                          <td>حرس</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                         <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>05</td>
+                          <td>مدافع</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>77</td>
+                          <td>مهاجم</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>12</td>
+                          <td>مدافع</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>04</td>
+                          <td>وسط</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>02</td>
+                          <td>وسط</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>08</td>
+                          <td>وسط</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>نص افتراضي لاسم اللاعب</td>
+                          <td>10</td>
+                          <td>مدافع</td>
+                          <td><i class="fa-solid fa-pen"></i></td>
+                          <td><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                      </tbody>
+                </table>
+               </div> 
+            </div>
+              <!-- End scand Teame -->
+
+              <div class="squad-save">
+                <button>حفظ</button>
+              </div>
+     </div>
+
+     <!-- End squad -->
+      </div>
+    
+
+
+  
+   
+    </div>
+
+
+    
+ 
+  </section>
+  <!-- End main-wrapper -->
+  <!-- script -->
+  <script src="js/script.js"></script>
+  <script src="js/respinsve_script.js"></script>
+</body>
+</html>

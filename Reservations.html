@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Link googel Font -->
+      <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+    <!-- Link  Font awsam -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- respinsev style -->
+    <link rel="stylesheet" href="css/responsive.css">
+      <title>الحجوزات</title>
+</head>
+<body id="News">
+  <!-- news poup -->
+  <div class="ovelay">
+      
+  </div>
+  <div class="poup-news poup-Championships Reservations-poup">
+    
+    <div class="close-popup">
+      <i onclick="displayPoupe()" class="fa-solid fa-xmark" id="close-popup"></i>
+    </div>
+    <h2> إضافة حجز</h2>
+    <form class="Reservations-form">
+       <div class="Reservations-form-cards">
+        <div class="Reservations-form-card">
+            <p>اسم الشخص الحاجز</p>
+            <input type="text" name="" id="" placeholder="أضف الشخص الذي قام بالحجز">
+        </div>
+        <div class="Reservations-form-card">
+            <p>الدفع  </p>
+            <div class="select">
+                <select name="select" id="select" onchange="selectCahng(this)">
+                  <option value="" disabled="" selected="" hidden=""> اختر طريقة الدفع</option>
+                <option value="">بطاقة الدفع </option>
+                <option value=""> كاش</option>
+              </select>
+              </div>
+        </div>
+       </div>
+       <div class="news-date-add ">
+        <label>تاريخ الحجز </label>
+        <label>من</label> <input type="date" name="date" id="date1" placeholder="حدد الوقت">
+        <label>إلى</label> <input type="date" name="date" id="date_2" placeholder="حدد الوقت">
+      </div>
+      <div class="news-date-add ">
+        <label>وقت الحجز  </label>
+        <label>من</label> <input type="time" name="date" id="date1" placeholder="حدد الوقت">
+        <label>إلى</label> <input type="time" name="date" id="date_2" placeholder="حدد الوقت">
+      </div>
+      <div class="popup-but">
+        <button>نشر</button>
+      </div>
+    </form>
+  </div>
+  <!-- main-wrapper -->
+  <section class="main-wrapper news">
+    <div class="open-nav" onclick="show_menu()">
+      <i class="fa-solid fa-bars" ></i>
+    </div>
+<!-- header right -->
+<header class="heder-right">
+  <div class="close-menue" onclick="close_menu()">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <span><img src="img/Group 89.png" alt="" style="width: 172px;"></span>
+  <br>
+  <br>
+  <nav class="nav-bar-1">
+    <ul class="nav-list">
+      <li><a href="index.html" > <i class="fa-solid fa-gauge-high"></i> الرئيسية</a></li>
+      <li><a href="Newes.html"> <i class="fa-regular fa-newspaper"></i>الأخبار</a></li>
+      <li><a href="Teams.html"> <i class="fa-solid fa-people-group"></i>اللاعبين</a></li>
+      <li><a href="Championships.html"> <i class="fa-solid fa-medal"></i>البطولات</a></li>
+      <li><a href="support.html"> <i class="fa-solid fa-comments"></i> المحادثات</a></li>
+      <li class="active-nav"><a href="Reservations.html"> <i class="fa-solid fa-square-check"></i>الحجوزات</a></li>
+      <li><a href="Transfer of Players.html"><i class="fa-solid fa-helmet-safety"></i>انتقالات اللاعبين</a></li>
+      <li><a href="Correspondence.html"><i class="fa-solid fa-envelope"></i>المراسلات</a></li>
+      <li><a href="Finance.html"><i class="fa-solid fa-building-columns"></i>المالية</a></li>
+      <li><a href="green stadiums.html"><i class="fa-solid fa-hockey-puck"></i>الملاعب الخضراء</a></li>
+    </ul>
+  </nav>
+  <nav class="nav-bar-2">
+    <ul>
+    <li><a href="#"><i class="fa-solid fa-gear"></i>الاعدادات</a></li>
+    <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>معلومات</a></li>
+  </ul>
+  </nav>
+ </header>
+    <!-- End header right -->
+    <!-- continer -->
+    <div class=" news-continer">
+      <!-- main-heder -->
+      <header class="main-heder al-cn">
+ <h2>البطولات</h2>
+ <div class="sar-prf">
+  <div class="heder-sarh">
+  <input type="search" name="search" id="input-search" placeholder="بحث">
+ 
+ </div>
+ <div class="card-profile dash-card de-fl al-cn">
+  <div class="card-profile-img de-fl">
+    <img src="img/Rectangle 37.png" alt="Rectangle">
+  </div>
+  
+  <span>محمد علي</span>
+  <div class="card-profile-icon">
+    <span class="de-fl al-cn ja-cn">2</span>
+    <i class="fa-regular fa-bell"></i>
+  </div>
+  
+  <box-icon name="bell"></box-icon>
+</div>
+ </div>
+ 
+ 
+ </header>
+ <!-- End main-heder -->
+ <!-- add-new -->
+ <div class="add-new but-Championships">
+    <button id="addNews" onclick="showPopue()"> <i class="fa-regular fa-plus"></i>إضافة حجز  </button>
+ </div>
+     <!-- End add-new" -->
+   <!-- Teams -->
+        <div class="teams">
+          
+          
+          <div class="team-tabel news-tabel tabel-reservations">
+            <table>
+              <thead>
+                <tr>
+                  
+                  <th>اسم الشخص </th>
+                  <th>الدفع</th>
+                  <th>تاريخ النشر</th>
+                  <th>وقت الحجز</th>
+                  <th>حالة الحجز</th>
+                  <th>حذف / تعديل</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                 
+                  <td> اسم الشخص الحاجز</td>
+                  <td>كاش</td>
+                  <td class="data-tab"> 
+                    <div class="dat-tabel">
+                        <span>من</span>
+                        <span>إلى</span>
+                    </div>
+                    <span>20/9/2022</span>
+                    <span>23/9/2022</span>
+                  </td>
+                  <td class="data-tab"> 
+                    <div class="dat-tabel">
+                        <span>من</span>
+                        <span>إلى</span>
+                    </div>
+                    <span>12:00PM</span>
+                    <span>12:00PM</span>
+                  </td>
+                  <td class="acceptable">مقبول</td>
+                 
+                  <td>
+                    <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                    <i class="fa-solid fa-pen"></i>
+                  </td>
+                    
+                        
+                  
+                    
+                </tr>
+                <tr>
+                 
+                    <td> اسم الشخص الحاجز</td>
+                    <td>كاش</td>
+                    <td class="data-tab"> 
+                      
+                      <span>20/9/2022</span>
+                      <span>23/9/2022</span>
+                    </td>
+                    <td class="data-tab"> 
+                      
+                      <span>12:00PM</span>
+                      <span>12:00PM</span>
+                    </td>
+                    <td class="no-acceptable">مرفوض</td>
+                   
+                    <td>
+                      <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                      <i class="fa-solid fa-pen"></i>
+                    </td>
+                      
+                          
+                    
+                      
+                  </tr>
+                  <tr>
+                 
+                    <td> اسم الشخص الحاجز</td>
+                    <td>كاش</td>
+                    <td class="data-tab"> 
+                      
+                      <span>20/9/2022</span>
+                      <span>23/9/2022</span>
+                    </td>
+                    <td class="data-tab"> 
+                      
+                      <span>12:00PM</span>
+                      <span>12:00PM</span>
+                    </td>
+                    <td class="acceptable">مقبول</td>
+                   
+                    <td>
+                      <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                      <i class="fa-solid fa-pen"></i>
+                    </td>
+                      
+                          
+                    
+                      
+                  </tr>
+                  <tr>
+                 
+                    <td> اسم الشخص الحاجز</td>
+                    <td>كاش</td>
+                    <td class="data-tab"> 
+                      
+                      <span>20/9/2022</span>
+                      <span>23/9/2022</span>
+                    </td>
+                    <td class="data-tab"> 
+                      
+                      <span>12:00PM</span>
+                      <span>12:00PM</span>
+                    </td>
+                    <td class="no-acceptable">مرفوض</td>
+                   
+                    <td>
+                      <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                      <i class="fa-solid fa-pen"></i>
+                    </td>
+                      
+                          
+                    
+                      
+                  </tr>
+                  <tr>
+                 
+                    <td> اسم الشخص الحاجز</td>
+                    <td>كاش</td>
+                    <td class="data-tab"> 
+                      
+                      <span>20/9/2022</span>
+                      <span>23/9/2022</span>
+                    </td>
+                    <td class="data-tab"> 
+                      
+                      <span>12:00PM</span>
+                      <span>12:00PM</span>
+                    </td>
+                    <td class="pending">قيد الانتظار</td>
+                   
+                    <td>
+                      <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                      <i class="fa-solid fa-pen"></i>
+                    </td>
+                      
+                          
+                    
+                      
+                  </tr>
+                  <tr>
+                 
+                    <td> اسم الشخص الحاجز</td>
+                    <td>كاش</td>
+                    <td class="data-tab"> 
+                      
+                      <span>20/9/2022</span>
+                      <span>23/9/2022</span>
+                    </td>
+                    <td class="data-tab"> 
+                      
+                      <span>12:00PM</span>
+                      <span>12:00PM</span>
+                    </td>
+                    <td class="acceptable">مقبول</td>
+                   
+                    <td>
+                      <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                      <i class="fa-solid fa-pen"></i>
+                    </td>
+                      
+                          
+                    
+                      
+                  </tr>
+                  <tr>
+                 
+                    <td> اسم الشخص الحاجز</td>
+                    <td>كاش</td>
+                    <td class="data-tab"> 
+                      
+                      <span>20/9/2022</span>
+                      <span>23/9/2022</span>
+                    </td>
+                    <td class="data-tab"> 
+                      
+                      <span>12:00PM</span>
+                      <span>12:00PM</span>
+                    </td>
+                    <td class="acceptable">مقبول</td>
+                   
+                    <td>
+                      <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                      <i class="fa-solid fa-pen"></i>
+                    </td>
+                      
+                          
+                    
+                      
+                  </tr>
+                  <tr>
+                 
+                    <td> اسم الشخص الحاجز</td>
+                    <td>كاش</td>
+                    <td class="data-tab"> 
+                      
+                      <span>20/9/2022</span>
+                      <span>23/9/2022</span>
+                    </td>
+                    <td class="data-tab"> 
+                      
+                      <span>12:00PM</span>
+                      <span>12:00PM</span>
+                    </td>
+                    <td class="acceptable">مقبول</td>
+                   
+                    <td>
+                      <i class="fa-solid fa-trash" style="color: #D50B0A;"></i>
+                      <i class="fa-solid fa-pen"></i>
+                    </td>
+                      
+                          
+                    
+                      
+                  </tr>
+              
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+    <!-- End Teams -->
+    </div>
+    <!-- End continer  -->
+     <!-- header left -->
+   
+    <!-- End header left -->
+
+    
+ 
+  </section>
+  <!-- End main-wrapper -->
+  <!-- script -->
+  <script src="js/script.js"></script>
+  <script src="js/respinsve_script.js"></script>
+</body>
+</html>
